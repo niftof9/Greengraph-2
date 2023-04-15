@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>About Greengraph</title>
+<style>
+.container {
+  display: flex;
+  gap: 20px;
+}
+
+.box {
+  background-color: #c1f1c1;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.green {
+  color: #008000;
+}
+</style>
+<script>
+window.onload = function() {
+let aboutText = `Welcome to Greengraph, a creative agency that specializes in creating content for companies in the areas of social media, communications, and visual mediums. Our team of experienced professionals is dedicated to helping businesses tell their stories and connect with their audiences through engaging content that is both visually compelling and strategically effective.
+We believe that every brand has a unique story to tell, and it's our job to help you tell it in a way that resonates with your target audience. Whether you need help with social media management, video production, or visual content creation, we have the expertise and creativity to deliver results that exceed your expectations.
+Meet our team of talented professionals who are passionate about helping businesses like yours succeed:`;
+
+let johnText = `John Cunningham is our resident social media expert, with over 10 years of experience in managing social media campaigns for a variety of clients. John has a deep understanding of the ever-evolving social media landscape and knows how to create content that drives engagement and generates results. Whether you need help with social media strategy, content creation, or community management, John is the go-to person on our team.
+`;
+
+let vanessaText = `Vanessa Pérez is our talented photographer and visual storyteller. With a keen eye for detail and a passion for capturing authentic moments, Vanessa has a talent for creating stunning visual content that tells a brand's story in a powerful way. Whether you need product photography, lifestyle shots, or visual content for your social media channels, Vanessa has the skills and creativity to bring your vision to life.
+`;
+
+let rodrigoText = `Rodrigo Müller is our resident video production expert, with years of experience creating video content for a variety of clients. Rodrigo has a talent for crafting compelling narratives and bringing them to life through video, whether it's a product demo, a brand video, or a social media ad campaign. With Rodrigo on your team, you can be confident that your video content will be top-notch and will help you achieve your business goals.
+`;
+
+document.getElementById("about-text").innerHTML = aboutText;
+document.getElementById("john-text").innerHTML = johnText;
+document.getElementById("vanessa-text").innerHTML = vanessaText;
+document.getElementById("rodrigo-text").innerHTML = rodrigoText;
+}
+</script>
+</head>
+<body>
+<h1>About Greengraph</h1>
+<div id="about-text"></div>
+<h2>Our Team</h2>
+<div class="container">
+  <div class="box">
+    <div id="john-text" class="green"></div>
+  </div>
+  <div class="box">
+    <div id="vanessa-text" class="green"></div>
+  </div>
+  <div class="box">
+    <div id="rodrigo-text" class="green"></div>
+  </div>
+</div>
+</body>
+</html>
